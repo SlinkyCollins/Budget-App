@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Budget</title>
+    <link rel="stylesheet" href="budget.css" />
+    <!-- <style type="text/css">
+      @media (min-width: 320px) {
+        body {
+          overflow-y: scroll;
+        }
+        .header h1{
+          /* color: red; */
+          width: 430px;
+          /* margin-bottom: 50px; */
+        }
+        .main-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 150px 0px 0px 100px; 
+        }
+        .main {
+          margin: 0;
+        }
+        #gif-image {
+          /* margin: 0 auto 0px 10px; */
+          padding: 0;
+          height: auto;
+          max-width: 350px;
+          object-fit: cover;
+        }
+      }
+    </style> -->
+  </head>
+  <body>
+    <div class="header">
+      <h1>Add Budget</h1>
+    </div>
+    <div class="main-container">
+      <div class="main">
+        <div class="input-container">
+          <div id="show"></div>
+          <input type="text" id="expenseInput" placeholder="Expense" />
+          <input type="number" id="inputQuantity" placeholder="Quantity" />
+          <input type="number" id="amountInput" placeholder="Amount" />
+        </div>
+        <button onclick="add()" id="addButton" class="custom-btn btn-1">
+          Add
+        </button>
+      </div>
+
+      <div>
+        <img src="GIFs and Images/E-Wallet.gif" alt="" id="gif-image" />
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
